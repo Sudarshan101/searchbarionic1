@@ -1,0 +1,23 @@
+<ion-view view-title="Dashboard">
+  <ion-header-bar>
+      <div class="h1 title">Search bar</div>
+      <button class="button button-icon button-clear button-positive ion-android-search" ng-click="showFilterBar()">
+                </button>
+  </ion-header-bar>
+  <ion-content class="padding">
+      <div class="card">
+        <a class="item item-thumbnail-left" ng-repeat="post in postArray">
+          <img src="{{post.image}}">
+          <h2>{{post.name}}</h2>
+          <p>{{post.message}}</p>
+        </a>
+      </div>
+  </ion-content>
+</ion-view>
+
+<!-- bower install ionic-filter-bar -->
+
+<!-- //ios 
+<platform name="ios">
+    <preference name="KeyboardDisplayRequiresUserAction" value="false"/>
+</platform> -->
